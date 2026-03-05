@@ -40,18 +40,7 @@ public class DLBHotspotDetector implements HotspotDetector {
         if (minN < 1 || maxN < minN)
             throw new IllegalArgumentException("invalid n-range");
 
-        // TODO:
-        // 1) Optionally clear a per-password "seen" set to compute docFreq on first
-        // occurrence only.
-        // Set<String> seen = new HashSet<>();
-        //
-        // 2) For each n in [minN..maxN], slide a window over leakedPassword and extract
-        // substrings.
-        // For each substring s = leakedPassword[i..i+n):
-        // - Insert s into the DLB (create nodes as needed).
-        // - Mark terminal node, increment freq.
-        // - If password not in 'seen', increment docFreq and add to 'seen'.
-        // - Update begin/middle/end counts based on position i and (i+n == len).
+      
 
         // Trim whitespace
         leakedPassword = leakedPassword.trim();
@@ -141,13 +130,7 @@ public class DLBHotspotDetector implements HotspotDetector {
         if (candidatePassword == null)
             throw new IllegalArgumentException("null candidatePassword");
 
-        // TODO:
-        // - For i = 0..candidate.length()-1:
-        // Start at the root of the DLB.
-        // Walk character by character (candidate.charAt(j)) until no matching child
-        // exists.
-        // Every time you reach a terminal node, that substring is a hotspot → aggregate
-        // it.
+    
         candidatePassword = candidatePassword.trim();
         Map<String, HotspotBuilder> hotspotMap = new HashMap<>();
         int len = candidatePassword.length();
