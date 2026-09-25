@@ -9,9 +9,9 @@ public class PushbackTunnel implements PushbackTunnelInterface {
         return 0;
     }
 
-    public int majorityHolder(int a, int b) {
+    public char majorityHolder(int a, int b) {
         // TODO: real logic once we know what this should return
-        return 0;
+        return ' ';
     }
 
     // TODO: add methods required by PushbackTunnelInterface.
