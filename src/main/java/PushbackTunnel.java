@@ -14,6 +14,11 @@ public class PushbackTunnel implements PushbackTunnelInterface {
         return ' ';
     }
 
+    public int slotCount() {
+        // TODO: real logic once we know what this should return
+        return 0;
+    }
+
     // TODO: add methods required by PushbackTunnelInterface.
     // The compiler will list any missing overrides once this file
     // is in place alongside PushbackTunnelInterface.java.
