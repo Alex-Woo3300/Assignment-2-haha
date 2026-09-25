@@ -4,6 +4,11 @@ public class PushbackTunnel implements PushbackTunnelInterface {
         // TODO: fill in based on autograder feedback
     }
 
+    public int countInTunnel(char c) {
+        // TODO: real logic once we know what this should track
+        return 0;
+    }
+
     // TODO: add methods required by PushbackTunnelInterface.
     // The compiler will list any missing overrides once this file
     // is in place alongside PushbackTunnelInterface.java.
