@@ -24,6 +24,11 @@ public class PushbackTunnel implements PushbackTunnelInterface {
         return ' ';
     }
 
+    public boolean isGuarded(Side s) {
+        // TODO: real logic once we know what this should return
+        return false;
+    }
+
     // TODO: add methods required by PushbackTunnelInterface.
     // The compiler will list any missing overrides once this file
     // is in place alongside PushbackTunnelInterface.java.
